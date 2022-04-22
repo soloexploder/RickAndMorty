@@ -37,6 +37,7 @@ class CharactersTableViewController: UITableViewController {
         return isFiltering ? filtredCharacter.count: rickAndMorty?.results.count ?? 0
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! CharacterTableViewCell
         

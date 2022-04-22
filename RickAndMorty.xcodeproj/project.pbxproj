@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B48731F28047CDB00E49D9E /* CharacteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48731E28047CDB00E49D9E /* CharacteImageView.swift */; };
 		8B7A7C3E27DB853600715934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A7C3D27DB853600715934 /* AppDelegate.swift */; };
 		8B7A7C4027DB853600715934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A7C3F27DB853600715934 /* SceneDelegate.swift */; };
 		8B7A7C4527DB853600715934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A7C4327DB853600715934 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B48731E28047CDB00E49D9E /* CharacteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteImageView.swift; sourceTree = "<group>"; };
 		8B7A7C3A27DB853600715934 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7A7C3D27DB853600715934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B7A7C3F27DB853600715934 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,10 +72,10 @@
 			children = (
 				8B7A7C5127DB855100715934 /* Model */,
 				8B7A7C5327DB856400715934 /* ViewControllers */,
+				8B7A7C5427DB857000715934 /* Servieces */,
 				8B7A7C5227DB855A00715934 /* View */,
 				8B7A7C5627DB85B000715934 /* StoryBoards */,
 				8B7A7C5527DB859300715934 /* SupportingFiles */,
-				8B7A7C5427DB857000715934 /* Servieces */,
 				8B7A7C5827DB860F00715934 /* Source */,
 			);
 			path = RickAndMorty;
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7A7C6327DB959C00715934 /* CharacterTableViewCell.swift */,
+				8B48731E28047CDB00E49D9E /* CharacteImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				8B7A7C5E27DB900D00715934 /* DetailCharViewController.swift in Sources */,
 				8B7A7C5A27DB872100715934 /* RickAndMorty.swift in Sources */,
 				8B7A7C6027DB903900715934 /* EpisodsTableViewController.swift in Sources */,
+				8B48731F28047CDB00E49D9E /* CharacteImageView.swift in Sources */,
 				8B7A7C5C27DB89BD00715934 /* CharactersTableViewController.swift in Sources */,
 				8B7A7C3E27DB853600715934 /* AppDelegate.swift in Sources */,
 				8B7A7C6227DB941200715934 /* EpisodDetailViewController.swift in Sources */,

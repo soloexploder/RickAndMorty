@@ -10,7 +10,7 @@ import UIKit
 class DetailCharViewController: UIViewController {
     
     // MARK: IBOutlets
-    @IBOutlet var characterImageView: UIImageView! {
+    @IBOutlet var characterImageView: CharacteImageView! {
         didSet{
             characterImageView.layer.cornerRadius = characterImageView.frame.width / 2
         }
@@ -38,8 +38,7 @@ class DetailCharViewController: UIViewController {
                 self.result = result
                 self.title = result.name
                 self.descriptionLabel.text = result.description
-                guard let imageData = ImageManager.shared.fetchImage(from: result.image) else {return}
-                self.characterImageView.image = UIImage(data: imageData)
+                self.characterImageView.fetchImage(from: result.image)
                 self.spinnerView.stopAnimating()
                 
             case .failure(let error):

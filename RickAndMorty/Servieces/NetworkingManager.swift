@@ -91,9 +91,18 @@ class ImageManager {
     
     private init() {}
     
-    func fetchImage(from url: String?) -> Data? {
-        guard let stringUrl = url else {return nil}
-        guard let imageUrl = URL(string: stringUrl) else {return nil}
-        return try? Data(contentsOf: imageUrl)
+    func fetchImage(from url: URL, completion: @escaping(Data, URLResponse) -> Void) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, let response = response else {
+                print(error?.localizedDescription ?? "No error discription")
+                return
+            }
+            
+            guard url == response.url else { return }
+            
+            DispatchQueue.main.async {
+                completion(data, response)
+            }
+        }.resume()
     }
 }
